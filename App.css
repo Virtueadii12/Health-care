@@ -31,36 +31,36 @@ body{
         margin-top: 10px;
     }
     
-    34button {
-    35    padding: 10px 20px;
-    36    margin-left: 5px;
-    37    border: none;
-    38    border-radius: 5px;
-    39    background-color: #5e54f2; /* Dark purple button */
-    40    color: white;
-    41    cursor: pointer;
-    42}
-    43
-    44button:hover {
-    45    background-color: #4c43d1; /* Darker purple on hover */
-    46}
-    47
-    48div.message {
-    49    margin: 5px 0;
-    50}
-    51
-    52.message.user {
-    53    text-align: right; /* Align user messages to the right */
-    54}
-    55
-    56.message.assistant {
-    57    text-align: left; /* Align assistant messages to the left */
-    58    color: #5e54f2; /* Color for assistant messages */
-    59    font-weight: bold; /* Make assistant messages bold */
-    60}
-    61
-    62#inputContainer {
-    63    display: flex;
-    64    justify-content: center;
-    65    margin-top: 10px;
-    66}
+    button {
+        padding: 10px 20px;
+        margin-left: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #5e54f2; /* Dark purple button */
+        color: white;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #4c43d1; /* Darker purple on hover */
+    }
+    
+    div.message {
+        margin: 5px 0;
+    }
+    
+    .message.user {
+        text-align: right; /* Align user messages to the right */
+    }
+    
+    .message.assistant {
+        text-align: left; /* Align assistant messages to the left */
+        color: #5e54f2; /* Color for assistant messages */
+        font-weight: bold; /* Make assistant messages bold */
+    }
+    
+    #inputContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
