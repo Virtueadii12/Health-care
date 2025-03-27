@@ -359,3 +359,9 @@ input {
     padding-left: 60%;
     border: darkcyan;
 }
+#logo {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
