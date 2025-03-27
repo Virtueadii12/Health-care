@@ -4,6 +4,18 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Smooth Scrolling Effect */
+html {
+    scroll-behavior: smooth;
 }
 
 header {
@@ -11,6 +23,11 @@ header {
     color: white;
     padding: 15px;
     text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+
+header:hover {
+    background: #45a049;
 }
 
 .hero {
@@ -19,6 +36,8 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     border-radius: 10px;
+    transform: translateY(10px);
+    transition: transform 0.3s ease-in-out;
 }
 
 button {
@@ -29,10 +48,13 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    transition: transform 0.2s, background 0.3s;
 }
 
 button:hover {
     background: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #features {
@@ -41,6 +63,8 @@ button:hover {
     background: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
 }
 
 .feature-box {
@@ -51,6 +75,12 @@ button:hover {
     max-width: 600px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .feature-box h3 {
@@ -96,10 +126,12 @@ button:hover {
     border-radius: 5px;
     font-size: 16px;
     margin-top: 10px;
+    transition: transform 0.2s, background 0.3s;
 }
 
 #contact button:hover {
     background: #45a049;
+    transform: scale(1.1);
 }
 
 footer {
@@ -133,21 +165,30 @@ footer {
     margin: 10px 0;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .metric h3 {
     color: #4CAF50;
 }
+
+.metric:hover {
+    transform: scale(1.05);
+}
 img{
-    border-radius: 8px;
-    height: 400px;
-    width: 600px;
+    border-radius: 25px;
+    height: 300px;
+    width: 450px;
+    transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(0.90);
 }
 #chat-container {
     width: 80%;
     max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 60px auto;
+    padding: 60px;
     background: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -155,13 +196,14 @@ img{
 }
 
 #chat-box {
-    height: 300px;
+    height: 600px;
     overflow-y: auto;
     border: 1px solid #ccc;
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
     margin-bottom: 10px;
+    animation: fadeIn 1s ease-in;
 }
 
 #user-input {
@@ -203,6 +245,7 @@ nav ul li a {
     border-radius: 6px;
     font-size: 16px;
     display: inline-block;
+    transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
@@ -262,9 +305,73 @@ nav ul li:hover::after {
     font-size: 18px;
     display: block;
     padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
+
+keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.feature-box.show, .metric.show, .food-item.show {
+    transform: translateY(0);
 
 #features ul li:hover {
     transform: scale(1.05);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#food-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgb(174, 154, 154);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#food-list h2 {
+    color: #F44336;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.food-item {
+    background: #42c4af;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.food-item h3 {
+    color: hsl(119, 91%, 46%);
+}
+
+.food-item p {
+    color: #ec552b;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#userInput{
+    height: 35px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    margin-right: 15px;
+
+}
 }
