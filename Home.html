@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Monitor</title>
     <link rel="stylesheet" href="App.css">
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+
 </head>
 <body>
-    <header><h1 id="health_monitor">Health Monitor - Home</h1>
+    <header>
+        <img src="Images/logo-transparent.png" alt="Health App Logo" id="logo">
+        <h1 id="health_monitor">Health Monitor - Home</h1>
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Feature.html">Features</a></li>
                 <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Reward.html">Rewards</a></li>
             </ul>
             <div id ="Login1" >
                 <div id="Login"><a href="Login.html"> Login </a>
@@ -23,7 +30,9 @@
     <section id="home" class="hero">
         
         <h2>Your Health, Our Priority</h2>
-        <p>Track your vitals and stay healthy with our AI-powered health monitoring app.</p>
+        <p>Track your vitals and stay healthy with our AI-powered health monitoring app.
+            Chat with our AI bot now. 
+        </p>
         <img className="img" src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image Not Found">
         <br><a href="Chatbot.html"><button onclick="showAlert()">Get Started</button></a>
     </section>
@@ -41,7 +50,7 @@
     <script src="App.js"></script>
    
        <footer id="contact">
-        <p>Contact usssss at <a href="mailto:support@healthmonitor.com">support@healthmonitor.com</a></p>
+        <p>Contact us at <a href="mailto:support@healthmonitor.com">support@healthmonitor.com</a></p>
     </footer>
     <footer>
         <p>&copy; 2025 Health Monitor. All rights reserved.</p>

@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
        const form = document.getElementById('messageForm');
         const input = document.getElementById('userInput');
