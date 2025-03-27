@@ -332,3 +332,12 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+#result{
+    background: #4f3ca4;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
