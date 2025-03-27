@@ -168,3 +168,8 @@ footer {
 .metric h3 {
     color: #4CAF50;
 }
+img{
+    border-radius: 8px;
+    height: 400px;
+    width: 600px;
+}
