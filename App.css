@@ -325,6 +325,7 @@ keyframes slideUp {
 
 .feature-box.show, .metric.show, .food-item.show {
     transform: translateY(0);
+}
 
 #features ul li:hover {
     transform: scale(1.05);
@@ -429,5 +430,4 @@ input {
 }
 
 
-}
 
